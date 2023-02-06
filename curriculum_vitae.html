@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<div class="contenedor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" type="text/css" href="css/curriculum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome\fontawesome-free-6.2.1-web\css\all.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Greek_uc_sigma.svg/400px-Greek_uc_sigma.svg.png">
+</head>
+
+<body>
+    
+
+        <header>
+    
+    <div class="circular">
+        <img  src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1974/production/_103061560_gettyimages-464452373.jpg"  alt="Foto CV"/>
+    </div>
+
+    <h1> Johann Carl Friedrich Gauss</h1>
+    
+    </header>
+
+<section>
+
+ <div class="primera_parte">
+
+<ul>
+    <h2> <i class="fa-sharp fa-solid fa-user"></i>
+        Información personal</h2>
+    
+
+    <li><h3>Nombre/s: <i>Johann Carl Friedrich</i></h3></li>
+    <li><h3>Apellido/s: <i>Gauss</i></h3></li>
+   <li> <h3>Nacimiento: <i>30 de abril de 1777</i></h3></li> 
+   <li> <h3>Nacionalidad: <i>alemana</i> </h3> </li>
+   <li><h3>Residencia: <i>Reino de Hanóver</i></h3></li>
+   <li><h3>Dirección: <i>Wilhelmsplatz 1, 37073 Göttingen, Alemania</i></h3></li>
+    <li><h3>Correo: <i>carlitosGauss_17@example.com</i></h3></li>
+    <li><h3>Telefono: <i>(247) 250-3573 </i></h3></li>
+    <li><h3>Celular: <i>(489) 330-2385</i></h3></li>
+</ul>
+<ul>
+    <h2><i class="fa-sharp fa-solid fa-briefcase"></i>
+        Información profesional</h2>
+
+    <li><h3>Profesión:<i>matemático, físico, atrónomo.</i></h3></li>
+    <li><h3>Campos de estudio:<i>teoría de números, análisis matemático, geometría diferencial, estadística,
+        álgebra, geodesia, magnetismo, óptica.
+    </i></h3></li>
+    <li><h3>Empleador:<i>Universidad de Gottinga</i></h3></li>
+</ul>
+
+</div>
+
+
+
+
+<script languague="javascript">
+    function mostrar() {
+        div = document.getElementById('hide');
+        div.style.display = '';
+    }
+
+    function cerrar() {
+        div = document.getElementById('hide');
+        div.style.display = 'none';
+    }
+
+</script>
+
+<div style="margin: 100px;">
+<div style="text-align: center;">
+<button class="boton">
+<p><a href="javascript:mostrar();">Extra</a></p>
+</button>
+</div>
+</div>
+
+<div id="hide" style="display:none;">
+
+    <div class="segunda_parte">
+
+
+
+        <h2><i>Una anécdota mía</i></h2>
+        <ul><p>
+            
+            «…Tenía Gauss 10 años cuando un día en la escuela el profesor manda sumar los cien primeros números naturales. El maestro quería unos minutos de tranquilidad… pero transcurridos pocos segundos Gauss levanta la mano y dice tener la solución: los cien primeros números naturales suman 5.050. Y efectivamente es así. ¿Cómo lo hizo Gauss? Pues mentalmente se dio cuenta de que la suma del primer término con el último, la del segundo con el penúltimo, etc., era constante:
+        </p>
+            <p>
+            1, 2, 3, 4…….. 97, 98, 99, 100
+            1+100 = 2+99 = 3+98 = 4+97 =… = 101
+            
+            </p><p>
+            
+                Con los 100 números se pueden formar 50 pares, de forma que la solución final viene dada por el producto
+        </p>
+    <p>
+            
+                101· 50 = 5050
+    </p><p>
+    Gauss había deducido la fórmula que da la suma de n términos de una progresión aritmética de la que se conocen el primero y el último término:
+            
+        </p>
+    
+        <i
+        class="img-formula">
+    
+    
+            <img src="http://upload.wikimedia.org/math/7/5/6/756de95c619932596b3509209ed39664.png" alt="formula de gauss">
+    </i>
+    
+    <p>
+        dónde a1 es el primer término, an el último, y n es el número de términos de la progresión..»
+    </p>
+    <div>
+       <p> Pruebe la fórmula en la siguiente calculadora. </p>
+    </div>
+    
+    
+    <form>
+        <label> Ingrese número
+            <input type="number" id="número" required>
+        </label>
+        <button type="button" id="calcular">Realizar cálculo</button>
+    </form>
+    
+    <div id="contenedorResultado" style="display: none;"><p> El resultado es: <i id="resultado"></i> </p></div>
+    
+    <script src="jv/calcular.js"></script>
+    
+    
+    
+    
+    <h1></h1>
+    
+    
+     
+     <h4 style="margin-top: 60px;">La siguiente es una recreación fílmica de la anécdota</h4> 
+    
+     
+     <div class="contenedor_video" >
+     <iframe width="90%" height="80%" src="https://www.youtube.com/embed/NcdsQaAAEAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+     
+
+     <p>
+     <div id="close"><a href="javascript:cerrar();"> <botton class="boton" >Ocultar</botton></a></div>
+   </p>
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<footer>
+    <ul type="square">
+        <div>
+            <h4> Distinciones:</h4>
+
+        </div>
+        <li>Miembro de la Academia Estadounidense de las Artes y las Ciencias</li>
+        <li>Miembro de la Royal Society</li>
+        <li>Orden del Mérito de las Ciencias y las Artes</li>
+        <li>Pour le Mérite</li>
+        <li>Premio Lalande (1809)</li>
+        <li>Medalla Copley (1838)</li>
+        <li>Orden bávara de Maximiliano para la Ciencia y las Artes (1853)</li>
+
+    </ul>
+</footer>
+
+</div>
+
+</body>
+
+</html>
+
